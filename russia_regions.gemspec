@@ -8,13 +8,15 @@ Gem::Specification.new do |spec|
   spec.version       = RussiaRegions::VERSION
   spec.authors       = ["pavel"]
   spec.email         = ["kalashnikovisme@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Регионы Российской Федерации.}
+  spec.description   = %q{Список субъектов Российской Федерации.}
+  spec.homepage      = "https://github.com/kalashnikovisme/russia_regions"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.required_ruby_version = '>= 2.0.0'
+  spec.files         = `git ls-files`.split("\n")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.post_install_message = "Регионы Российской Федерации регулярно обновляются, изменения будут приходить в обновлениях гема."
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
