@@ -4,7 +4,7 @@ require 'yaml'
 module RussiaRegions
   class YamlLoader
     def self.yaml_object(filename)
-      YAML.load_file(gem_root + '/yaml/' + filename + '.yml').with_indifferent_access
+      @_cache_russian_regions_yml ||= YAML.load_file(gem_root + '/yaml/' + filename + '.yml').with_indifferent_access
     end
 
     private
