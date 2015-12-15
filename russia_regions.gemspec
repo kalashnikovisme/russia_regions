@@ -6,7 +6,7 @@ require 'russia_regions/version'
 Gem::Specification.new do |spec|
   spec.name          = "russia_regions"
   spec.version       = RussiaRegions::VERSION
-  spec.authors       = ["pavel"]
+  spec.authors       = ["kalashnikovisme Khelek"]
   spec.email         = ["kalashnikovisme@gmail.com"]
   spec.summary       = %q{Регионы Российской Федерации.}
   spec.description   = %q{Список субъектов Российской Федерации.}
